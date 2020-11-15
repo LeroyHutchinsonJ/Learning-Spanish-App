@@ -10,12 +10,54 @@ p{
 .score {
     text-align: right;
 }
-
+.content {
+    text-align: left;
+}
+/*Until we get to max width, this executes */
 @media ( max-width: 1150px)
-{
-    
+{   
     .imageTitle{
         margin-top: 1.0em;
         margin-bottom: 1.0em;
     }
+}
+
+/*Unless the screen size is less than 768, this executes*/
+@media (min-width: 768px)
+{   
+    .imageTitle{
+        max-width:50%;
+    }
+}
+
+@media ( min-width: 1200px)
+{   
+    .imageTitle{
+        max-width: 40%;
+    }
+}
+.cardContainer :hover{
+    border: 4px solid lightblue;
+}
+.fadedCard{
+    opacity: 15%;
+}
+.imageCard {
+    width: 15%;
+}
+.notification{
+    visibility: visible;
+}
+.alert{
+    text-align: center;
+}
+.progress {
+    margin-top: 2em;
+    height: 40px;
+}
+.trophy{
+    background: white;
+    color: gold;
+    font-size: 40px;
+    margin-top: .3em;
 }
